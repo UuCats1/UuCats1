@@ -11,17 +11,6 @@
 
 <body>
 <style>
-pre{
-    color: #2196F3;
-	font-size: 18px;
-	font-family: 微软雅黑;
-	background: rgba(255, 255, 255, 0.55);
-	}
-.img-xys {
-         display: inline-block;
-         height: auto;
-         max-width: 100%;
-         }
     html,
     body {
         margin: 0;
@@ -41,6 +30,18 @@ pre{
 
 
 
+#dynamic-background {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -1;
+        filter: blur(4px); /* 添加高斯模糊效果 */
+
+这个替换掉原来的背景↓
+<div id="dynamic-background">
+    <!-- 背景图片或视频 -->
+    <iframe src="https://api.r10086.com/PPT/PPT.php?PPT=原神" width="100%" height="100%" style="border: 0;"></iframe>
+</div>
 <div style="position: absolute;width: 100%;text-align:center; top:20px;">
 <center><p style="text-shadow: rgb(0, 0, 0) 1px 1px 1px;font-size: 24px;color: #FF0000;top: 18px;left: 143px;">👇你好👇</p></center>
 <center><p style="text-shadow: rgb(0, 0, 0) 1px 1px 1px;font-size: 24px;color: #F100FF;top: 18px;left: 143px;">👇关于开放👇</p></center>
